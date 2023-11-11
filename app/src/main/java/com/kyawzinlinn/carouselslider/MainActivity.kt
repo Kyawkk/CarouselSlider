@@ -37,10 +37,10 @@ class MainActivity : ComponentActivity() {
                     )
                     Column {
                         Spacer(Modifier.height(32.dp))
-                        CarouselSlider(itemCount = images.size,
+                        /*CarouselSlider(itemCount = images.size,
                             itemCardShape = RoundedCornerShape(10.dp),
                             dotShape = CircleShape,
-                            dotColor = MaterialTheme.colorScheme.onBackground,
+                            dotColor = MaterialTheme.colorScheme.primary,
                             dotSize = 10.dp,
                             pageSpacing = 16.dp,
                             duration = 3000L,
@@ -56,7 +56,7 @@ class MainActivity : ComponentActivity() {
                                     .fillMaxWidth(),
                                 contentScale = ContentScale.Crop
                             )
-                        }
+                        }*/
                     }
                 }
             }

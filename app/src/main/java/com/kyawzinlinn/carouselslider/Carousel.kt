@@ -1,3 +1,4 @@
+/*
 @file:OptIn(
     ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class,
     ExperimentalFoundationApi::class, ExperimentalFoundationApi::class
@@ -16,7 +17,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
@@ -47,9 +47,9 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlin.math.absoluteValue
 
-/*
 * Carousel default values
-* */
+*
+
 val defaultDotSize = 10.dp
 val defaultDotShape = CircleShape
 val defaultPageSpacing = 16.dp
@@ -173,3 +173,4 @@ private fun CarouselItem(
         content(page)
     }
 }
+*/
