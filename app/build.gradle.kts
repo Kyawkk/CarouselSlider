@@ -62,7 +62,6 @@ android {
 
 dependencies {
     implementation("androidx.compose.ui:ui-util:1.5.4")
-    implementation ("com.github.Kyawkk:CarouselSlider:v1.0.4")
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
@@ -87,7 +86,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.Kyawkk"
             artifactId = "CarouselSlider"
-            version ="1.0.5"
+            version ="1.0.6"
 
             afterEvaluate {
                 from(components["release"])
