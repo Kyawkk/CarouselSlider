@@ -62,6 +62,7 @@ android {
 
 dependencies {
     implementation("androidx.compose.ui:ui-util:1.5.4")
+    implementation ("com.github.Kyawkk:CarouselSlider:v1.0.2")
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
@@ -80,17 +81,16 @@ dependencies {
     debugImplementation(libs.ui.test.manifest)
 }
 
-/*
-project.afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("maven") {
-                groupId = "com.kyawzinlinn"
-                artifactId = "carouselslider"
-                version = "1.0.1"
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.Kyawkk"
+            artifactId = "CarouselSlider"
+            version ="1.0.4"
 
-                from(components["java"])
+            afterEvaluate {
+                from(components["release"])
             }
         }
     }
-}*/
+}
