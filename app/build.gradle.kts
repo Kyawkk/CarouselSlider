@@ -4,7 +4,7 @@ import org.gradle.internal.impldep.org.codehaus.plexus.util.MatchPatterns.from
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
-    `maven-publish`
+    id("maven-publish")
 }
 
 android {
@@ -86,7 +86,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.Kyawkk"
             artifactId = "CarouselSlider"
-            version ="1.0.8"
+            version ="1.0.9"
 
             afterEvaluate {
                 from(components["release"])

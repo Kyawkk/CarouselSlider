@@ -1,3 +1,7 @@
+object Carousel {
+    val people = listOf("Hla Hla", "Mya Mya")
+}
+
 /*
 @file:OptIn(
     ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class,
