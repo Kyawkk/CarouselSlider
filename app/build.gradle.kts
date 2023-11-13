@@ -62,7 +62,7 @@ android {
 
 dependencies {
     implementation("androidx.compose.ui:ui-util:1.5.4")
-    implementation ("com.github.Kyawkk:CarouselSlider:v1.0.2")
+    implementation ("com.github.Kyawkk:CarouselSlider:v1.0.4")
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
@@ -72,6 +72,7 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
+    implementation(project(":Carousel"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -86,7 +87,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.Kyawkk"
             artifactId = "CarouselSlider"
-            version ="1.0.4"
+            version ="1.0.5"
 
             afterEvaluate {
                 from(components["release"])

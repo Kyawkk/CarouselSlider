@@ -1,3 +1,4 @@
+/*
 @file:OptIn(
     ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class,
     ExperimentalFoundationApi::class, ExperimentalFoundationApi::class
@@ -170,3 +171,4 @@ private fun CarouselItem(
     }
 }
 
+*/

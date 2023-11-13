@@ -1,4 +1,3 @@
-/*
 @file:OptIn(
     ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class,
     ExperimentalFoundationApi::class, ExperimentalFoundationApi::class
@@ -46,9 +45,6 @@ import androidx.compose.ui.util.lerp
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlin.math.absoluteValue
-
-* Carousel default values
-*
 
 val defaultDotSize = 10.dp
 val defaultDotShape = CircleShape
@@ -173,4 +169,3 @@ private fun CarouselItem(
         content(page)
     }
 }
-*/
