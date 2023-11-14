@@ -4,11 +4,11 @@ import org.gradle.internal.impldep.org.codehaus.plexus.util.MatchPatterns.from
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
-    id("maven-publish")
+    //id("maven-publish")
 }
 
 android {
-    namespace = "com.kyawzinlinn.carouselslider"
+    //namespace = "com.kyawzinlinn.carouselslider"
     compileSdk = 34
 
     defaultConfig {
@@ -52,12 +52,14 @@ android {
         }
     }
 
-    publishing {
+    /*publishing {
         singleVariant("release") {
             withSourcesJar()
             withJavadocJar()
         }
-    }
+    }*/
+
+    namespace = "com.kyawzinlinn.carouselslider"
 }
 
 dependencies {
@@ -81,7 +83,7 @@ dependencies {
     debugImplementation(libs.ui.test.manifest)
 }
 
-publishing {
+/*publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.Kyawkk"
@@ -93,4 +95,4 @@ publishing {
             }
         }
     }
-}
+}*/
