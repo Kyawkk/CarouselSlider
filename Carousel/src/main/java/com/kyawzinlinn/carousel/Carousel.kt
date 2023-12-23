@@ -1,8 +1,4 @@
-object Carousel {
-    val people = listOf("Hla Hla", "Mya Mya")
-}
 
-/*
 @file:OptIn(
     ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class,
     ExperimentalFoundationApi::class, ExperimentalFoundationApi::class
@@ -175,4 +171,3 @@ private fun CarouselItem(
     }
 }
 
-*/
