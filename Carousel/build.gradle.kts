@@ -2,7 +2,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
-    //id("maven-publish")
+    id("maven-publish")
 }
 
 android {
@@ -48,4 +48,18 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
+}
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.Kyawkk"
+            artifactId = "CarouselSlider"
+            version = "2.0.0"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }
